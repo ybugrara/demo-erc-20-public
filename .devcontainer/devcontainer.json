@@ -16,13 +16,16 @@
 			"settings": {},
 			"extensions": [
 				"JuanBlanco.solidity",
-                		"NomicFoundation.hardhat-solidity"
+				"NomicFoundation.hardhat-solidity",
+				"ritwickdey.LiveServer"
 			]
 		}
 	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [3000],
+	"forwardPorts": [
+		5500
+	],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "npm i"
