@@ -72,18 +72,3 @@ The branch coverage is not 100% because two branches are deadcode:
 
 2. The branch `require(account != address(0)` on line 340 in `_mint` is deadcode because `_mint` is only called from the constructor where `account` is the `msg.sender` which can never be `address(0)`. 
 
-
-# Executed Runs
-
-The following repositories are forks that have the generated tests and coverage reports committed for easy access to results:
-
-* https://github.com/state-space/demo-erc20-depth-2
-* https://github.com/state-space/demo-erc20-depth-3
-* https://github.com/state-space/demo-ecrecover-depth-2
-
-# Talking points
-
-* Branch coverage increases from 81.25% to 87.5% when increasing from depth 1 to depth 2
-* ERC20Permit with ecrecover is a good example of a program that’s infeasible for fuzzing tools
-* 87.5% branch coverage is the maximum for this benchmark due to deadcode branches
-* Deadcode can be removed to optimize gas usage.
