@@ -1,0 +1,26 @@
+{
+  "name": "demo-erc20",
+  "version": "1.0.0",
+  "description": "- [ ] Generated and passing tests - [ ] Submit contract through authenticated plugin - [ ] Plugin is downloadable/installable from a public repository with a single command - [ ] Live coverage report - [ ] External UI (log in, list of past runs, link to live coverage report) - [ ] Yasir is able to run this demo independently from scratch.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/state-space/demo-erc20.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/state-space/demo-erc20/issues"
+  },
+  "homepage": "https://github.com/state-space/demo-erc20#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "hardhat": "^2.12.0"
+  },
+  "dependencies": {
+    "@statespace/hardhat-testgen": "^0.0.22"
+  }
+}
