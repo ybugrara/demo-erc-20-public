@@ -17,11 +17,12 @@ import "@statespace/hardhat-testgen";
 const config: HardhatUserConfig = {
   solidity: "0.8.16",
   testgen: {
-    validAbiOnly: true
+    sequences: [["GLDToken.*"]],
   }
 };
 
 export default config;
+
 ```
 
 9. Compile the contracts: `npx hardhat compile`
@@ -35,15 +36,15 @@ export default config;
 The default depth is 1. To use a depth of 2, replace the entire `hardhat.config.ts` file with the following contents:
 
 ```
-import {HardhatUserConfig} from "hardhat/config";
+import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
-import "@statespace/hardhat-testgen"
+import "@statespace/hardhat-testgen";
 
 const config: HardhatUserConfig = {
   solidity: "0.8.16",
   testgen: {
-    depth: 2,
-  },
+    sequences: [["GLDToken.*", "GLDToken.*"]],
+  }
 };
 
 export default config;
