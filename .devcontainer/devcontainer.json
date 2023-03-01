@@ -16,7 +16,7 @@
 			"settings": {},
 			"extensions": [
 				"JuanBlanco.solidity",
-                "NomicFoundation.hardhat-solidity"
+                		"NomicFoundation.hardhat-solidity"
 			]
 		}
 	},
